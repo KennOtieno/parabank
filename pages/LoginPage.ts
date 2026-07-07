@@ -17,7 +17,6 @@ export class LoginPage {
     this.loginBtn = page.locator('input[value="Log In"]');
     this.errorMsg = page.locator(".error");
 
-    // More specific selector to avoid strict mode error
     this.accountsOverviewTitle = page.getByRole("heading", {
       name: "Accounts Overview",
     });
