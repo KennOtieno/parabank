@@ -1,0 +1,23 @@
+{
+  "name": "parabank",
+  "version": "1.0.0",
+  "description": "ParaBank is a fullstack, mock retail banking application designed by Parasoft as a comprehensive sandbox for testing and automation testing.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KennOtieno/parabank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KennOtieno/parabank/issues"
+  },
+  "homepage": "https://github.com/KennOtieno/parabank#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0"
+  }
+}
