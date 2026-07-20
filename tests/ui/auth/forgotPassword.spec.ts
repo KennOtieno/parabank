@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
-import { ForgotPasswordPage } from "../../pages/ForgotPasswordPage";
-import { forgotPasswordTestCases } from "../../test-data/forgotPasswordData";
+import { ForgotPasswordPage } from "../../../pages/ui/ForgotPasswordPage";
+import { forgotPasswordTestCases } from "../../../test-data/ui/forgotPasswordData";
 
 test.describe("Authentication - Forgot Login Info Tests", () => {
   let forgetPasswordPage: ForgotPasswordPage;

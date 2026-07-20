@@ -1,8 +1,8 @@
 import { test } from "@playwright/test";
-import { LoginPage } from "../../pages/LoginPage";
-import { ProfilePage } from "../../pages/ProfilePage";
-import { existingUser } from "../../test-data/loginData";
-import { profileUpdateTestCases } from "../../test-data/profileData";
+import { LoginPage } from "../../../pages/ui/LoginPage";
+import { ProfilePage } from "../../../pages/ui/ProfilePage";
+import { existingUser } from "../../../test-data/ui/loginData";
+import { profileUpdateTestCases } from "../../../test-data/ui/profileData";
 
 test.describe("Profile Update Tests", () => {
   let loginPage: LoginPage;

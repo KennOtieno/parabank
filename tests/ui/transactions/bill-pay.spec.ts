@@ -1,8 +1,8 @@
 import { test } from "@playwright/test";
-import { LoginPage } from "../../pages/LoginPage";
-import { BillPayPage } from "../../pages/BillPayPage";
-import { existingUser } from "../../test-data/loginData";
-import { billPayTestCases } from "../../test-data/billPayData";
+import { LoginPage } from "../../../pages/ui/LoginPage";
+import { BillPayPage } from "../../../pages/ui/BillPayPage";
+import { existingUser } from "../../../test-data/ui/loginData";
+import { billPayTestCases } from "../../../test-data/ui/billPayData";
 
 test.describe("Bill Payment Tests", () => {
   let loginPage: LoginPage;
@@ -22,6 +22,7 @@ test.describe("Bill Payment Tests", () => {
 
   for (const billPayCase of billPayTestCases) {
     test(`Scenario - ${billPayCase.scenario}`, async () => {
+      
       await test.step("Submit bill payment form", async () => {
         await billPayPage.payBill(billPayCase.data);
       });

@@ -1,8 +1,8 @@
 import { test } from "@playwright/test";
-import { LoginPage } from "../../pages/LoginPage";
-import { TransferFundsPage } from "../../pages/TransferFundsPage";
-import { existingUser } from "../../test-data/loginData";
-import { transferFundsTestCases } from "../../test-data/transferFundsData";
+import { LoginPage } from "../../../pages/ui/LoginPage";
+import { TransferFundsPage } from "../../../pages/ui/TransferFundsPage";
+import { existingUser } from "../../../test-data/ui/loginData";
+import { transferFundsTestCases } from "../../../test-data/ui/transferFundsData";
 
 test.describe("Transfer Funds Tests", () => {
   let loginPage: LoginPage;
