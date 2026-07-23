@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
-import { LoginPage } from "../../pages/LoginPage";
-import { loginTestCases } from "../../test-data/loginData";
+import { LoginPage } from "../../../pages/ui/LoginPage";
+import { loginTestCases } from "../../../test-data/ui/loginData";
 
 test.describe("Authentication - Login Tests", () => {
   let loginPage: LoginPage;

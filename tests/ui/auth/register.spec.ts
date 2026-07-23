@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
-import { RegisterPage } from "../../pages/RegisterPage";
-import { registerTestCases } from "../../test-data/registerData";
+import { RegisterPage } from "../../../pages/ui/RegisterPage";
+import { registerTestCases } from "../../../test-data/ui/registerData";
 
 test.describe("Authentication - Registration Tests", () => {
   test.describe.configure({ mode: "serial" });
